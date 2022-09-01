@@ -4,9 +4,9 @@ import java.util.Date;
 
 public class Autor {
 
-    private String nombre;
-    private String nacionalidad;
-    private Date fecha;
+    String nombre;
+    String nacionalidad;
+    Date fecha;
 
 
     public Autor(String nombre, String nacionalidad, Date fecha) {
@@ -38,4 +38,7 @@ public class Autor {
     public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
+
+
+
 }

@@ -6,7 +6,10 @@ public class Lector {
     private Estado_Lector estadolector;
     private static int ultimoid_lector;
 
-
+    public Lector(int id_lector, Estado_Lector estadolector) {
+        this.id_lector = id_lector;
+        this.estadolector = estadolector;
+    }
 
     public Lector(int id_lector) {
         this.id_lector = ++ultimoid_lector;
