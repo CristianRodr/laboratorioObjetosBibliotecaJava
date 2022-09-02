@@ -7,18 +7,14 @@ public class Libro {
     private String editorial;
     private int año;
 
-    private Autor autor;
-
-    public Libro(String titulo, Tipo_Libro tipo, String editorial, int año, Autor autor) {
+    public Libro(String titulo, Tipo_Libro tipo, String editorial, int año) {
         this.titulo = titulo;
         this.tipo = tipo;
         this.editorial = editorial;
         this.año = año;
-        this.autor = autor;
     }
 
     public Libro() {
-
     }
 
     public String getTitulo() {
@@ -53,54 +49,14 @@ public class Libro {
         this.año = año;
     }
 
-    public Autor getAutor() {
-        return autor;
-    }
-
-    public void setAutor(Autor autor) {
-        this.autor = autor;
-    }
-
     public String detalle() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("\nTitulo = " + this.getTitulo());
-        sb.append("\nTipo de libro = " + this.getTipo());
-        sb.append("\nEditorial = " + this.editorial);
-        sb.append("\naño = " + this.año);
-        sb.append("\autor = " + this.autor.getNombre());
-        sb.append("\n-------------------------------");
-        return sb.toString();
+        return "\nTitulo = " + this.getTitulo() +
+                "\nTipo de libro = " + this.getTipo() +
+                "\nEditorial = " + this.editorial +
+                "\naño = " + this.año +
+                "\n-------------------------------";
     }
 
-    public String detalle() {
-        String detall = "\nauto.id = " + this.id +
-                "\nauto.fabricante = " + this.getFabricante() +
-                "\nauto.modelo = " + this.getModelo();
 
-        if (this.getTipo() != null) {
-            detall += "\nauto.tipo + " + this.getTipo().getDescripcion();
-        }
 
-        detall += "\nauto.color = " + this.color +
-                "\nauto.patenteColor + " + colorPatente;
-
-        if (this.motor != null) {
-            detall += "\nauto.cilindrada = " + this.motor.getCilindrada();
-        }
-
-        if (conductor != null) {
-            detall += "Conductor subaru: " + this.getConductor();
-        }
-        if (getRuedas() != null) {
-            detall += "\nRuedas del automovil: ";
-            for (Rueda r :
-                    this.getRuedas()) {
-                detall += "\n" + r.getFabricante() + ", aro: " + r.getAro() + ", ancho:  " + r.getAncho();
-            }
-        }
-
-        System.out.println("----------------------------------------------");
-
-        return detall;
-    }
 }

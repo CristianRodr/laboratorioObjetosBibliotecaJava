@@ -2,6 +2,7 @@ package org.cristian.appbiblioteca.modelo;
 
 public class Lector {
 
+    private String nombreLector;
     private int id_lector;
     private Estado_Lector estadolector;
     private static int ultimoid_lector;
@@ -25,5 +26,13 @@ public class Lector {
 
     public void setEstadolector(Estado_Lector estadolector) {
         this.estadolector = estadolector;
+    }
+
+    public String getNombreLector() {
+        return nombreLector;
+    }
+
+    public void setNombreLector(String nombreLector) {
+        this.nombreLector = nombreLector;
     }
 }

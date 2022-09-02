@@ -11,8 +11,14 @@ public class Copia extends Libro{
         this.id_Copia = ++ultimoid_copia;
     }
 
-    public Copia(String titulo, Tipo_Libro tipo, String editorial, int año) {
+    public Copia(int id_Copia, String titulo, Tipo_Libro tipo, String editorial, int año, Tipo_Estado estado) {
         super(titulo, tipo, editorial, año);
+        this.id_Copia = id_Copia;
+        this.estado = estado;
+    }
+
+    public void setId_Copia(int id_Copia) {
+        this.id_Copia = id_Copia;
     }
 
     public static int getUltimoid_copia() {
@@ -30,4 +36,15 @@ public class Copia extends Libro{
     public void setEstado(Tipo_Estado estado) {
         this.estado = estado;
     }
+
+    public String verDetalle() {
+        return "\nid = " + this.id_Copia +
+                "\nTitulo = " + this.getTitulo() +
+                "\nTipo de libro = " + this.getTipo() +
+                "\nEditorial = " + this.getEditorial() +
+                "\naño = " + this.getAño() +
+                "\nEstado = " + this.estado +
+                "\n-------------------------------";
+    }
+
 }

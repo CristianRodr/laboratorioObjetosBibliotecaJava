@@ -15,4 +15,9 @@ public enum Tipo_Estado {
     public String getTipoEstado() {
         return tipoEstado;
     }
+
+    @Override
+    public String toString() {
+        return this.tipoEstado;
+    }
 }
