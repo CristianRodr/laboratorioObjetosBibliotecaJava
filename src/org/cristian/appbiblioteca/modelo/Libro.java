@@ -7,6 +7,10 @@ public class Libro {
     private String editorial;
     private int año;
 
+    private String nombre;
+    private String nacionalidad;
+    private String fecha;
+
     public Libro(String titulo, Tipo_Libro tipo, String editorial, int año) {
         this.titulo = titulo;
         this.tipo = tipo;
@@ -14,7 +18,37 @@ public class Libro {
         this.año = año;
     }
 
+    public Libro(String nombre, String nacionalidad, String fecha) {
+        this.nombre = nombre;
+        this.nacionalidad = nacionalidad;
+        this.fecha = fecha;
+    }
+
     public Libro() {
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getNacionalidad() {
+        return nacionalidad;
+    }
+
+    public void setNacionalidad(String nacionalidad) {
+        this.nacionalidad = nacionalidad;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
     }
 
     public String getTitulo() {
@@ -57,6 +91,8 @@ public class Libro {
                 "\n-------------------------------";
     }
 
-
+    public String escrito(String titulo) {
+        return titulo +" Escrito por " + nombre + " nacido en " + nacionalidad + " el " + fecha;
+    }
 
 }

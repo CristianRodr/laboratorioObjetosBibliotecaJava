@@ -6,6 +6,7 @@ public class Copia extends Libro{
     private Tipo_Estado estado;
     private static int ultimoid_copia;
 
+
     public Copia(int id_Copia) {
         super();
         this.id_Copia = ++ultimoid_copia;
@@ -16,6 +17,7 @@ public class Copia extends Libro{
         this.id_Copia = id_Copia;
         this.estado = estado;
     }
+
 
     public void setId_Copia(int id_Copia) {
         this.id_Copia = id_Copia;

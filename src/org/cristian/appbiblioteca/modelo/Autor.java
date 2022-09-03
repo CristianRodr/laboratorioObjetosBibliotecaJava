@@ -1,15 +1,13 @@
 package org.cristian.appbiblioteca.modelo;
 
-import java.util.Date;
-
 public class Autor {
 
     String nombre;
     String nacionalidad;
-    Date fecha;
+    String fecha;
 
 
-    public Autor(String nombre, String nacionalidad, Date fecha) {
+    public Autor(String nombre, String nacionalidad, String fecha) {
         this.nombre = nombre;
         this.nacionalidad = nacionalidad;
         this.fecha = fecha;
@@ -31,11 +29,11 @@ public class Autor {
         this.nacionalidad = nacionalidad;
     }
 
-    public Date getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 
