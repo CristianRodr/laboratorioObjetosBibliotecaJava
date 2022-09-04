@@ -1,10 +1,9 @@
 package org.cristian.appbiblioteca;
 
-import org.cristian.appbiblioteca.modelo.*;
-
-import java.time.LocalDate;
-import java.util.Date;
-import java.util.Scanner;
+import org.cristian.appbiblioteca.modelo.Copia;
+import org.cristian.appbiblioteca.modelo.Libro;
+import org.cristian.appbiblioteca.modelo.Tipo_Estado;
+import org.cristian.appbiblioteca.modelo.Tipo_Libro;
 
 public class Biblioteca {
     public static void main(String[] args) {

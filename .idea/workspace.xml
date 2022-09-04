@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="96144e47-7e19-4942-ba1d-e50f559f537e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/cristian/appbiblioteca/Biblioteca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/cristian/appbiblioteca/Biblioteca.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/cristian/appbiblioteca/modelo/Autor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/cristian/appbiblioteca/modelo/Autor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/cristian/appbiblioteca/modelo/Copia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/cristian/appbiblioteca/modelo/Copia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/cristian/appbiblioteca/modelo/Libro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/cristian/appbiblioteca/modelo/Libro.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
